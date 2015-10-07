@@ -9,7 +9,7 @@ import scaldi.play.condition._
 
 class MyModule extends Module {
   bind[Mailer] when inProdMode to new ProdMailer
-  bind[Mailer] when (inDevMode or inTestMode) to new DevMailer
+  bind[Mailer] to new DevMailer
 
-  //bind[HttpErrorHandler] to injected [MyErrorHandler] ('router -> injectProvider[Router])
+  bind[HttpErrorHandler] to injected [MyErrorHandler] ('router -> injectProvider[Router])
 }
