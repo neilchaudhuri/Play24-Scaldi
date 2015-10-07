@@ -10,6 +10,7 @@ class Application(implicit inj: Injector) extends Controller {
   val mode = inject[Mode]
 
   def index = Action {
+    mailer.mail()
     Ok(views.html.index("Your new application is ready."))
   }
 
