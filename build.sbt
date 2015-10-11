@@ -17,4 +17,4 @@ resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 
 routesGenerator := InjectedRoutesGenerator
 
-libraryDependencies += "org.scaldi" %% "scaldi-play" % "0.5.9"
+libraryDependencies += "org.scaldi" %% "scaldi-play" % "0.5.10"
